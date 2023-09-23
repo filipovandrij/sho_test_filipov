@@ -1,0 +1,21 @@
+@mixin moreBtn() {
+  margin-top: 43px;
+  width: 101px;
+  height: 29px;
+  border: 1px solid black;
+  background-color: white;
+  transition: all 1s;
+  &:hover {
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    transform: scale(1.2);
+    background-color: black;
+    color: $borderColor;
+  }
+}
+
+@mixin fontSizeWeightHeight($size: 0, $weight: 0, $height: 0) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
