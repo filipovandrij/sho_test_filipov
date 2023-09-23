@@ -1,0 +1,132 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Italianno", cursive;
+}
+
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  margin-top: 26px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  .logo_name {
+    border-bottom: 1px solid $borderColor;
+  }
+}
+
+.logo_name {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 187px;
+  height: 50px;
+}
+.main_container {
+  margin: 0 106px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.menu_list {
+  width: 501px;
+  display: flex;
+  justify-content: space-around;
+  li {
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+
+      transition: all 1s;
+      &:hover {
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+  }
+}
+
+.header_picture {
+  margin-top: 62px;
+  width: 100%;
+  height: 485px;
+  background-image: url(/img/river_venice.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_phrase {
+  padding-top: 192px;
+  text-align: center;
+  color: white;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 0em;
+}
+
+.sub_title_phrase {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+// main  VVV FIRST SECTION VVV  //
+
+.about_us_section {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 115px;
+}
+
+.about_us_info {
+  h3 {
+    width: 102px;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 44px;
+    border-bottom: 1px solid $borderColor;
+  }
+  .first_text {
+    margin-top: 22px;
+  }
+  .second_text {
+    margin-top: 29px;
+  }
+
+  .more_btn {
+    margin-top: 43px;
+    width: 101px;
+    height: 29px;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 1s;
+    &:hover {
+      border: 1px solid $borderColor;
+      border-radius: 10px;
+      transform: scale(1.2);
+      background-color: black;
+      color: $borderColor;
+    }
+  }
+}
