@@ -57,7 +57,7 @@ nav {
   line-height: 14px;
   transition: all 1s;
 }
-.menu_list li a:hover {
+.menu_list li a:hover, .menu_list li a:focus {
   border-bottom: 1px solid #fcac45;
 }
 
@@ -102,13 +102,20 @@ nav {
   line-height: 44px;
   border-bottom: 1px solid #fcac45;
 }
+.about_us_info .second_text,
+.about_us_info .first_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
 .about_us_info .first_text {
   margin-top: 22px;
 }
 .about_us_info .second_text {
   margin-top: 29px;
 }
-.about_us_info .more_btn {
+
+.more_btn {
   margin-top: 43px;
   width: 101px;
   height: 29px;
@@ -116,10 +123,71 @@ nav {
   background-color: white;
   transition: all 1s;
 }
-.about_us_info .more_btn:hover {
+.more_btn:hover {
   border: 1px solid #fcac45;
   border-radius: 10px;
   transform: scale(1.2);
   background-color: black;
   color: #fcac45;
+}
+
+.menu_section {
+  margin-top: 167px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_section h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.menu_section h4 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 56px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 112px;
+  padding-bottom: 54px;
+  border-bottom: 1px solid #fcac45;
+}
+
+.text_ingredients {
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.price {
+  text-align: center;
+  padding-top: 22px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.bolognese_cart {
+  margin-top: 90px;
+}
+
+.rissoto_cart {
+  margin-top: 55px;
+}
+
+.lasagna_cart {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-top: 55px;
+}
+
+.menu_btn {
+  margin-top: 82px;
 }/*# sourceMappingURL=style.css.map */
